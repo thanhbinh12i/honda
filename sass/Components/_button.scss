@@ -1,0 +1,21 @@
+@mixin button($border, $bg,$color, $padding, $bg-hover, $color-hover){
+      border: 2px solid $border;
+      border-radius: 40px;
+      background-color: $bg;
+      color: $color;
+      font-weight: $font-weight-bold;
+      padding: $padding;
+      font-size: $font-size-1;
+      &:hover{
+            background-color: $bg-hover;
+            color: $color-hover;
+
+      }
+}
+.btn-vehicle{
+      @include button($color-blue-200, $color-blue-100, $color-white, $pd-1 $pd-5, $color-white , $color-blue-100);
+      margin-right: $mg-1;
+}
+.btn-vehicle-active{
+      @include button($color-blue-200, $color-white, $color-blue-100, $pd-1 $pd-5, $color-blue-200 , $color-white);
+}

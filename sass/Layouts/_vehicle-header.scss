@@ -1,0 +1,91 @@
+.container--config{
+      padding: 0 $pd-7;
+}
+.col{
+      padding: 0;
+}
+#vehicles {
+      background-color: $color-blue-overlay;
+      .vehicles-nav {
+            background-color: $color-white;
+            text-align: center;
+            padding: $pd-3 0;
+            ul {
+                  list-style: none;
+                  margin: 0;
+                  li {
+                        display: inline;
+                        a {
+                              padding: $pd-1 $pd-4;
+                              font-weight: $font-weight-bold;
+                              color: $color-dark-blue-200;
+                              border-right: $border-2;
+                              font-size: $font-size-1;
+                              &:hover {
+                                    color: $color-blue-200;
+                                    text-decoration: none;
+                              }
+                        }
+                  }
+                  .active {
+                        a {
+                              color: $color-blue-200;
+                              text-decoration: underline;
+                        }
+                  }
+            }
+      }
+      #vehicles-list{
+            background-color: $color-grey;
+            padding: $pd-6;
+            .vehicle-title{
+                  h1{
+                        background-color: $color-grey;
+                        position: relative;
+                        top: $mg-up-2;
+                        padding: 0 $pd-1;
+                        color: $color-dark-blue-200;
+                        font-weight: $font-weight-bold;
+                        font-size: $font-size-3;
+                        i{
+                              font-size: $font-size-3*0.5;
+                              position: relative;
+                              top: $mg-up-1;
+                        }
+                        span{
+                              font-weight: $font-weight-normal;
+                        }
+                  }
+            }
+            .vehicle-product{
+                  color: $color-dark-blue-200;
+                  margin-bottom: $mg-3;
+                  &:hover .vehicle-img img:last-child{
+                        display: block;
+                  }
+                  &:hover .vehicle-img img:first-child{
+                        display: none;
+                  }
+                  .vehicle-img img:last-child{
+                        display: none;
+                  }
+                  h2{
+                        font-size: $font-size-2;
+                        font-weight: $font-weight-bold;
+                        color: $color-dark-blue-200;
+                        margin: $mg-1;
+                  }
+                  .vehicle-info{
+                        margin-bottom: $mg-2;
+                        h3{
+                              font-weight: $font-weight-normal;
+                              font-size: $font-size-3;
+                        }
+                        p{
+                              font-size: $font-size-1;
+                              margin: $mg-1;
+                        }
+                  }
+            }
+      }
+}

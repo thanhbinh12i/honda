@@ -1,0 +1,8 @@
+@each $stt,$bg-color in (1,#3C4C5C) (2,#5E5E5E) (3,#14409A) (4,#C0BAB5) (5,#5C5C5C) (6,#33569C){
+      #img-#{$stt}{
+            background: linear-gradient(#bbbdc0, $color-grey,$color-grey);
+      }
+      .vehicle-product:hover >#img-#{$stt}{
+            background: linear-gradient($bg-color, $color-grey,$color-grey);
+      }
+}
