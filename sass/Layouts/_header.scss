@@ -1,19 +1,95 @@
-#header{
-      .navbar{
-            padding: 0;
-      }
+#header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index:10;
+	width:100%;
+}
+.navbar {
+      padding: 0;
+}
+#navbar {
       background-color: $color-blue-100;
-      a{
-            color: $color-dark-white ;
+      a {
+            color: $color-dark-white;
             padding: $pd-3 $pd-4;
-            border-right:  $border-1 ;
-            border-left:  $border-1 ;
-            font-size:1.4rem;
+            border-right: $border-1;
+            border-left: $border-1;
+            font-size: 1.4rem;
+            &:hover{
+			text-decoration:none;
+		}
       }
-      .navbar > a:first-child{
+      .nav-item .nav-link{
+		padding:$pd-3 $pd-4;
+	}
+      a:first-child {
             padding: 0 $pd-4;
       }
+      .discover-menu{
+            left: unset;
+            right: 30%;
+            width: 40rem;
+            padding: $pd-4;
+            box-shadow: $box-shadow;
+            &::before{
+                  @include arrow(unset, 2%);
+            }
+            .dropdown-item{
+                  &:hover{
+                        background-color: transparent;
+                  }
+            }
+            .dropdown-menu-detail{
+                  > div{
+                        width: 50%;
+                  }
+                  display: flex;
+                  h3{
+                        margin-bottom: $mg-2;
+                        color: $color-dark-blue-200;
+                        font-weight: $font-weight-bold;
+                  }
+                  .dropdown-detail-right{
+                        padding-left: $pd-3;
+                  }
+                  ul{
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+                  }
+                  ul li{
+                        margin-bottom: $mg-2 - 5;
+                  }
+                  ul li a{
+                        color: $color-blue-200;
+                        border: none;
+                        padding: 0;
+                        font-weight: $font-weight-bold;
+                        font-size: $font-size-1;
+                  }
+            }
+            .dropdown-menu-social{
+                  display: flex;
+                  justify-content: space-around;
+                  i{
+                        width: 30px;
+                        height: 30px;
+                        background-color: $color-blue-100;
+                        border-radius: 50%;
+                        color: white;
+                        font-size: $font-size-1;
+                        text-align: center;
+                        line-height: 30px;
+                  }
+            }
+      }
+
 }
-.no-border{
-      border: 0!important;
+.no-border {
+      border: 0 !important;
+}
+#navbar > .active{
+	color:$color-blue-200 !important;
+	background-color:$color-white !important;
 }

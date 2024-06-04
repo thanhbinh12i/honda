@@ -19,3 +19,7 @@
 .btn-vehicle-active{
       @include button($color-blue-200, $color-white, $color-blue-100, $pd-1 $pd-5, $color-blue-200 , $color-white);
 }
+.btn-search{
+      @include button($color-blue-200, transparent, $color-blue-100, $pd-1 $pd-5, $color-blue-200 , $color-white);
+      margin-top: $mg-2 * -1;
+}

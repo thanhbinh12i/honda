@@ -5,4 +5,7 @@
       .vehicle-product:hover >#img-#{$stt}{
             background: linear-gradient($bg-color, $color-grey,$color-grey);
       }
+      .delay-#{$stt}{
+            animation-delay: (0.2s * $stt);
+      }
 }
