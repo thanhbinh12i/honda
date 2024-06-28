@@ -8,3 +8,20 @@
       left: $left;
       right: $right;
 }
+@mixin text($weight,$margin){
+	font-weight:$weight;
+	margin-bottom:$margin;
+}
+@mixin section-padding{
+      padding: 0 $pd-8;
+}
+@mixin social-icon{
+	width:30px;
+	height:30px;
+	background-color:$color-blue-100;
+	border-radius:50%;
+	color:white;
+	font-size:$font-size-1;
+	text-align:center;
+	line-height:30px;			
+}

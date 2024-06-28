@@ -1,11 +1,73 @@
-@each $stt,$bg-color in (1,#3C4C5C) (2,#5E5E5E) (3,#14409A) (4,#C0BAB5) (5,#5C5C5C) (6,#33569C){
-      #img-#{$stt}{
-            background: linear-gradient(#bbbdc0, $color-grey,$color-grey);
+@each $stt, $bg-color in (1, #3c4c5c) (2, #5e5e5e) (3, #14409a) (4, #c0bab5) (5, #5c5c5c) (6, #33569c) {
+      #img-#{$stt} {
+            background: linear-gradient(#bbbdc0, $color-grey, $color-grey);
       }
-      .vehicle-product:hover >#img-#{$stt}{
-            background: linear-gradient($bg-color, $color-grey,$color-grey);
+      .vehicle-product:hover > #img-#{$stt} {
+            background: linear-gradient($bg-color, $color-grey, $color-grey);
       }
-      .delay-#{$stt}{
+      .delay-#{$stt} {
             animation-delay: (0.2s * $stt);
+      }
+}
+@each $stt, $img in (1, banner-1) (2, banner-2) (3, banner-3) (4, banner-4) {
+      #swiper-slider {
+            .slide-#{$stt} {
+                  background: url("../../img/#{$img}.jpg");
+                  background-size: cover;
+                  background-position: center center;
+                  @media screen and (max-width: 768px) {
+                        background: url("../../img/#{$img}-xs.jpg");
+                        background-size: cover;
+                        background-position: unset;
+                  }
+                  @media screen and (max-width: 576px) {
+                        background: url("../../img/#{$img}-xs.jpg");
+                        background-size: cover;
+                        background-position: center center;
+                  }
+            }
+      }
+}
+@each $stt, $img in (1, slider-1) (2, slider-2) (3, slider-3) (4, slider-4) (5, slider-5) {
+      .carousel-inner {
+            .item-#{$stt} {
+                  background: url("../img/#{$img}.jpg");
+                  background-size: cover;
+                  background-position: center center;
+                  @media screen and (max-width: 768px) {
+                        background: url("../img/#{$img}-xs.jpg");
+                        background-size: cover;
+                        background-position: unset;
+                  }
+                  @media screen and (max-width: 576px) {
+                        background: url("../img/#{$img}-xs.jpg");
+                        background-size: cover;
+                        background-position: center center;
+                  }
+            }
+      }
+}
+@each $stt, $img in (1, item-1) (2, item-2) (3, item-3) (4, item-4) {
+      .function-#{$stt} {
+            background: url("../img/#{$img}.jpg");
+            background-size: 120%;
+            background-position: center 0;
+            background-repeat: no-repeat;
+            background-color: $color-white;
+            @media screen and (min-width: 440px) and (max-width: 576px) {
+                  background-size: 100%;
+            }
+            @media screen and (min-width: 769px) and (max-width: 992px) {
+                  background-size: 120%;
+            }
+      }
+}
+@each $stt,$img in (1,discover-1) (2,discover-2) (3,discover-3) (4,discover-4) (5,discover-5){
+      .discover-item-#{$stt}{
+            background:url('../img/#{$img}.jpg');
+            background-size:120%;
+            background-position: center 0;
+            background-repeat:no-repeat;
+            background-color:$color-white;
       }
 }

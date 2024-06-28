@@ -94,3 +94,21 @@
             transform: translate3d(0, -10%, 0);
       }
 }
+//---------------BOOTSTRAP CUSTOMIZE--------------
+.carousel {
+      overflow: hidden;
+}
+.carousel-control-prev,
+.carousel-control-next {
+      width: 5%;
+}
+.carousel-control-prev {
+      left: -1.5rem;
+}
+.carousel-control-next {
+      right: -1.5rem;
+}
+.img-fluid {
+      width: 100% !important;
+      height: 100%;
+}
