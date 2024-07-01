@@ -1,0 +1,84 @@
+#footer{
+      background-color: $color-grey;
+      padding: $pd-6 $pd-8;
+      flex-wrap: wrap;
+      h1{
+            @include text($font-weight-bold, $mg-3);
+            color: $color-dark-blue-200;
+            font-size: $font-size-2;
+      }
+      .footer-detail{
+            ul li{
+                  margin-bottom: $mg-2;
+                  a{
+                        font-size: $font-size-1;
+                        color: $color-blue-200;
+                  }
+            }
+      }
+      .footer-touch{
+            width: 100%;
+            margin-top: $mg-3;
+            border-top: $border-2;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: $pd-3 0;
+            .touch-left{
+                  i{
+                        @include social-icon();
+                  }
+            }
+            .touch-right{
+                  text-align: right;
+                  p{
+                        font-size: $font-size-1;
+                        color: $color-dark-blue-200;
+                        margin-bottom: $mg-2;
+                  }
+                  .btn-search{
+                        margin-top: 0;
+                  }
+            }
+      }
+}
+#copy-right{
+      background-color: $color-blue-100;
+      @include section-padding();
+      padding-top: $pd-3;
+      padding-bottom: $pd-3;
+      .copy-right-left{
+            p{
+                  font-size: $font-size-1;
+                  color: $color-grey;
+                  a{
+                        color: $color-grey;
+                        text-decoration: underline;
+                        font-style: italic;
+                  }
+            }
+      }
+      .copy-right-right{
+            ul{
+                  justify-content: flex-end;
+                  li{
+                        padding: 0 $pd-2;
+                        border-left: $border-3;
+                        a{
+                              font-size: $font-size-1;
+                              color: $color-grey;
+                        }
+                  }
+                  li:first-child{
+                      border-left: 0;  
+                  }
+            }
+      }
+      .logo-footer{
+            margin-top: $mg-3;
+            img{
+                  max-width: 50%;
+                  height: 4.5rem;
+            }
+      }
+}

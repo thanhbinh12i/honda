@@ -1,4 +1,4 @@
-#search-area{
+.search-field{
       background-color: $color-grey;
       padding: $pd-1 $pd-6;
       position: relative;
@@ -25,5 +25,30 @@
       &::before{
             @include arrow(unset, 1%);
             border-bottom-color: $color-grey;
+      }
+}
+#search-field{
+      padding: 0 $pd-6;
+      background-color: $color-white;
+      border: $border-3;
+      &::before{
+            display: none;
+      }
+      div{
+            padding: $pd-2 0;
+            width: 85%;
+            border-right: $border-3;
+            input{
+                  margin-left: $mg-1;
+                  width: 85%;
+            } 
+      }
+      p{
+            flex-grow: 1;
+            font-size: $font-size-1;
+            color: $color-blue-200;
+            text-align: right;
+            margin: 0;
+            cursor: pointer;
       }
 }

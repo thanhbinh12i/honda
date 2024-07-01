@@ -3,7 +3,15 @@ body {
   padding: 0;
 }
 
-.animated {
+html {
+  font-size: 11px;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+#header .animated {
   -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
 }
@@ -125,7 +133,7 @@ body {
   color: #fff;
   font-weight: bold;
   padding: 6px 30px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin-right: 5px;
 }
 .btn-vehicle:hover {
@@ -140,7 +148,7 @@ body {
   color: #007cc3;
   font-weight: bold;
   padding: 6px 30px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .btn-vehicle-active:hover {
   background-color: #2198dc;
@@ -154,7 +162,7 @@ body {
   color: #007cc3;
   font-weight: bold;
   padding: 6px 30px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin-top: -20px;
 }
 .btn-search:hover {
@@ -169,7 +177,7 @@ body {
     color: #fff;
     font-weight: bold;
     padding: 6px 15px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin-top: 0;
     border-radius: 5px;
   }
@@ -186,7 +194,7 @@ body {
   color: #fff;
   font-weight: bold;
   padding: 6px 15px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .btn-carousel:hover {
   background-color: #fff;
@@ -200,7 +208,7 @@ body {
   color: #fff;
   font-weight: bold;
   padding: 6px 15px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .btn-go:hover {
   background-color: transparent;
@@ -214,7 +222,7 @@ body {
   color: #fff;
   font-weight: bold;
   padding: 6px 15px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .btn-go-orange:hover {
   background-color: #fff;
@@ -228,7 +236,7 @@ body {
   color: #fff;
   font-weight: bold;
   padding: 6px 15px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .btn-build:hover {
   background-color: #fff;
@@ -240,7 +248,7 @@ body {
 }
 @media screen and (max-width: 576px) {
   .btn-caption {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     padding: 6px 20px;
   }
 }
@@ -687,7 +695,7 @@ body {
   border: none;
   padding: 0;
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 #navbar .discover-menu .dropdown-menu-social {
   display: flex;
@@ -699,7 +707,7 @@ body {
   background-color: #007cc3;
   border-radius: 50%;
   color: white;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   text-align: center;
   line-height: 30px;
 }
@@ -740,7 +748,7 @@ body {
   font-weight: bold;
   color: #00324f;
   border-right: 0.15rem solid #a8a7a7;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 #vehicles #vehicle-content .vehicle-nav ul li a:hover {
   color: #2198dc;
@@ -787,7 +795,7 @@ body {
   display: none;
 }
 #vehicles #vehicle-list .vehicle-product h2 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 5px;
 }
@@ -799,7 +807,7 @@ body {
   font-size: 2.4rem;
 }
 #vehicles #vehicle-list .vehicle-product .vehicle-info p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin-bottom: 5px;
 }
 #vehicles #vehicle-close {
@@ -829,11 +837,11 @@ body {
   margin: auto;
 }
 #vehicles #vehicle-close .vehicle-circle i {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 25px;
 }
 #vehicles #vehicle-close p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: bold;
 }
 
@@ -841,18 +849,18 @@ body {
   display: none;
 }
 
-#search-area {
+.search-field {
   background-color: #f5f5f5;
   padding: 6px 50px;
   position: relative;
 }
-#search-area i {
+.search-field i {
   color: #2198dc;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   transform: translateY(-3px);
   margin-right: 10px;
 }
-#search-area input {
+.search-field input {
   width: 88%;
   height: 4.5rem;
   border: none;
@@ -862,10 +870,10 @@ body {
   font-size: 2.4rem;
   color: #2198dc;
 }
-#search-area input::placeholder {
+.search-field input::placeholder {
   font-size: 2.4rem;
 }
-#search-area::before {
+.search-field::before {
   content: "";
   border-bottom: 15px solid white;
   border-right: 15px solid transparent;
@@ -875,6 +883,118 @@ body {
   left: unset;
   right: 1%;
   border-bottom-color: #f5f5f5;
+}
+
+#search-field {
+  padding: 0 50px;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+}
+#search-field::before {
+  display: none;
+}
+#search-field div {
+  padding: 15px 0;
+  width: 85%;
+  border-right: 1px solid #eaeaea;
+}
+#search-field div input {
+  margin-left: 5px;
+  width: 85%;
+}
+#search-field p {
+  flex-grow: 1;
+  font-size: 1.6rem;
+  color: #2198dc;
+  text-align: right;
+  margin: 0;
+  cursor: pointer;
+}
+
+#footer {
+  background-color: #f5f5f5;
+  padding: 50px 5%;
+  flex-wrap: wrap;
+}
+#footer h1 {
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #00324f;
+  font-size: 1.8rem;
+}
+#footer .footer-detail ul li {
+  margin-bottom: 20px;
+}
+#footer .footer-detail ul li a {
+  font-size: 1.6rem;
+  color: #2198dc;
+}
+#footer .footer-touch {
+  width: 100%;
+  margin-top: 30px;
+  border-top: 0.15rem solid #a8a7a7;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+#footer .footer-touch .touch-left i {
+  width: 30px;
+  height: 30px;
+  background-color: #007cc3;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 30px;
+}
+#footer .footer-touch .touch-right {
+  text-align: right;
+}
+#footer .footer-touch .touch-right p {
+  font-size: 1.6rem;
+  color: #00324f;
+  margin-bottom: 20px;
+}
+#footer .footer-touch .touch-right .btn-search {
+  margin-top: 0;
+}
+
+#copy-right {
+  background-color: #007cc3;
+  padding: 0 5%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#copy-right .copy-right-left p {
+  font-size: 1.6rem;
+  color: #f5f5f5;
+}
+#copy-right .copy-right-left p a {
+  color: #f5f5f5;
+  text-decoration: underline;
+  font-style: italic;
+}
+#copy-right .copy-right-right ul {
+  justify-content: flex-end;
+}
+#copy-right .copy-right-right ul li {
+  padding: 0 15px;
+  border-left: 1px solid #eaeaea;
+}
+#copy-right .copy-right-right ul li a {
+  font-size: 1.6rem;
+  color: #f5f5f5;
+}
+#copy-right .copy-right-right ul li:first-child {
+  border-left: 0;
+}
+#copy-right .logo-footer {
+  margin-top: 30px;
+}
+#copy-right .logo-footer img {
+  max-width: 50%;
+  height: 4.5rem;
 }
 
 #swiper-slider {
@@ -940,6 +1060,7 @@ body {
   font-size: 1.4rem;
 }
 .intro .intro-container .intro-left .intro-left-content h4 {
+  font-size: 1.6rem;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -955,7 +1076,7 @@ body {
   position: absolute;
   top: 30%;
   left: 5%;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   width: 45%;
 }
 .intro .intro-container .intro-right .intro-right-content h4 {
@@ -964,7 +1085,7 @@ body {
   background: rgba(0, 67, 108, 0.8);
   padding: 6px 15px;
   display: inline-block;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 .intro .intro-container .intro-right .intro-right-content p {
   font-weight: bold;
@@ -998,7 +1119,7 @@ body {
 #our-vehicles .carousel-indicators-config li {
   color: #00324f;
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   padding: 6px 20px;
   border-radius: 4rem;
   cursor: pointer;
@@ -1025,7 +1146,7 @@ body {
   top: 8%;
   left: 6%;
   color: white;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 #our-vehicles .carousel-caption-config > p {
   font-weight: bold;
@@ -1049,7 +1170,7 @@ body {
   font-size: 4rem;
 }
 #our-vehicles .carousel-caption-config .carousel-caption-detail .carousel-detail-content p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: bold;
 }
 #our-vehicles .carousel-caption-footer {
@@ -1060,7 +1181,7 @@ body {
   border-top: 0.15rem solid #a8a7a7;
 }
 #our-vehicles .carousel-caption-footer a {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: bold;
   color: white;
 }
@@ -1074,7 +1195,7 @@ body {
   padding: 0 15px;
 }
 #our-vehicles .carousel-indicatiors-xs h1 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin: 5px;
   margin-right: auto;
   color: #007cc3;
@@ -1100,7 +1221,7 @@ body {
 #our-vehicles .carousel-indicatiors-xs ol li {
   color: #00324f;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   padding: 15px;
   cursor: pointer;
 }
@@ -1109,7 +1230,7 @@ body {
   margin: 100px 0;
 }
 #our-vehicles .function {
-  height: 380px;
+  height: 340px;
   box-shadow: 0 5px 10px 0 rgba(8, 29, 42, 0.08);
   position: relative;
   cursor: pointer;
@@ -1124,13 +1245,13 @@ body {
   color: #2198dc;
 }
 #our-vehicles .function h3 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 5px;
   color: #00324f;
 }
 #our-vehicles .function p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 300;
   margin-bottom: 20px;
   color: #00446a;
@@ -1161,10 +1282,10 @@ body {
 #our-vehicles #discover .discover-title span {
   color: #00446a;
   font-weight: 300;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 #our-vehicles #discover .discover-item {
-  height: 500px;
+  height: 460px;
   position: relative;
   box-shadow: 0 5px 10px 0 rgba(8, 29, 42, 0.08);
   margin-top: 20px;
@@ -1173,23 +1294,23 @@ body {
   text-align: center;
   position: absolute;
   left: 0;
-  bottom: 10%;
+  bottom: 8%;
 }
 #our-vehicles #discover .discover-item .discover-item-content h2, #our-vehicles #discover .discover-item .discover-item-content a {
   font-weight: bold;
   margin-bottom: 20px;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: #00324f;
 }
 #our-vehicles #discover .discover-item .discover-item-content p {
   font-weight: 300;
   margin-bottom: 20px;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   padding: 0 20px;
 }
 #our-vehicles #discover .discover-item .discover-item-content a {
   color: #2198dc;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 #our-vehicles #discover .discover-item-6 {
   color: #2198dc;
@@ -1213,13 +1334,13 @@ body {
   height: 4rem;
 }
 #our-vehicles #discover .discover-item-6 .discover-item-twitter .discover-twitter-logo p {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 }
 #our-vehicles #discover .discover-item-6 .discover-item-twitter .discover-twitter-logo p a:first-child {
   font-weight: bold;
 }
 #our-vehicles #discover .discover-item-6 .discover-item-twitter .discover-twitter-logo > p {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   color: #00324f;
 }
 #our-vehicles #discover .discover-item-6 .discover-item-twitter .discover-twitter-logo .discover-twitter-interaction {
@@ -1263,7 +1384,7 @@ body {
 
 @media screen and (max-width: 1200px) {
   #copy-right p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   #copy-right ul {
     justify-content: flex-end;
@@ -1275,7 +1396,7 @@ body {
     padding: 0 15px;
   }
   #copy-right ul li a {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   #copy-right .logo-footer img {
     max-width: 50%;
@@ -1330,7 +1451,7 @@ body {
     text-align: left;
     bottom: unset;
     top: 10%;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
 @media screen and (max-width: 992px) {
@@ -1340,7 +1461,7 @@ body {
 }
 @media screen and (max-width: 992px) {
   #our-vehicles .carousel-caption-config .carousel-caption-detail .carousel-detail-content p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
 @media screen and (max-width: 992px) {
@@ -1403,7 +1524,7 @@ body {
     width: 75%;
   }
   #search-field div input, #search-field div i, #search-field div input::placeholder {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
   #search-field div input {
     width: 65%;
@@ -1431,7 +1552,7 @@ body {
 
 @media screen and (max-width: 992px) {
   #copy-right p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   #copy-right ul {
     justify-content: flex-end;
@@ -1443,7 +1564,7 @@ body {
     padding: 0 6px;
   }
   #copy-right ul li a {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   #copy-right .logo-footer img {
     max-width: 50%;
@@ -1494,7 +1615,7 @@ body {
 @media screen and (max-width: 768px) {
   #search-area-xs i {
     color: #fff;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1505,14 +1626,14 @@ body {
     border-radius: 5px;
     padding-bottom: 15px 0;
     padding-left: 6px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: #fff;
     background-color: transparent;
   }
 }
 @media screen and (max-width: 768px) {
   #search-area-xs input::placeholder {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: #fff;
   }
 }
@@ -1549,7 +1670,7 @@ body {
     text-align: center;
     bottom: 10%;
     top: unset;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1559,7 +1680,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   #our-vehicles .carousel-caption-config .carousel-caption-detail .carousel-detail-content p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1620,7 +1741,7 @@ body {
     border-top: 1px solid #eaeaea;
   }
   #search-field div input, #search-field div i, #search-field div input::placeholder {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
   #search-field div input {
     width: 70%;
@@ -1652,7 +1773,7 @@ body {
     background-color: #f5f5f5;
     padding: 15px 15px;
     align-items: center;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     display: flex;
     justify-content: space-between;
     margin-bottom: 2px;
@@ -1663,7 +1784,7 @@ body {
     background-color: #007cc3;
     border-radius: 50%;
     color: white;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     text-align: center;
     line-height: 30px;
     color: #2198dc;
@@ -1693,7 +1814,7 @@ body {
 
 @media screen and (max-width: 768px) {
   #copy-right p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   #copy-right ul {
     justify-content: flex-start;
@@ -1705,7 +1826,7 @@ body {
     padding: 0 6px;
   }
   #copy-right ul li a {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   #copy-right .logo-footer {
     justify-content: center !important;
@@ -1761,7 +1882,7 @@ body {
 @media screen and (max-width: 576px) {
   #search-area-xs i {
     color: #fff;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1772,14 +1893,14 @@ body {
     border-radius: 5px;
     padding-bottom: 15px 0;
     padding-left: 6px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: #fff;
     background-color: transparent;
   }
 }
 @media screen and (max-width: 576px) {
   #search-area-xs input::placeholder {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: #fff;
   }
 }
@@ -1817,7 +1938,7 @@ body {
     text-align: center;
     bottom: 10%;
     top: unset;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
 @media screen and (max-width: 576px) and (max-width: 576px) {
@@ -1827,7 +1948,7 @@ body {
 }
 @media screen and (max-width: 576px) and (max-width: 576px) {
   #our-vehicles .carousel-caption-config .carousel-caption-detail .carousel-detail-content p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1894,7 +2015,7 @@ body {
     border-top: 1px solid #eaeaea;
   }
   #search-field div input, #search-field div i, #search-field div input::placeholder {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
   #search-field div input {
     width: 60%;
@@ -1929,7 +2050,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
   #footer .footer-detail h1 i {
     width: 30px;
@@ -1937,7 +2058,7 @@ body {
     background-color: #007cc3;
     border-radius: 50%;
     color: white;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     text-align: center;
     line-height: 30px;
     color: #2198dc;
@@ -1965,7 +2086,7 @@ body {
 
 @media screen and (max-width: 576px) {
   #copy-right p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   #copy-right ul {
     justify-content: flex-start;
@@ -1977,7 +2098,7 @@ body {
     padding: 0 6px;
   }
   #copy-right ul li a {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   #copy-right .logo-footer {
     justify-content: center !important;
